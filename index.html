@@ -1,13 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./myStyles.css">
-    <title>Document</title>
+    <title>major-projects</title>
 </head>
+
 <body>
+    <div class="name">
+        <h3>Name = Krishan Kanhay</h3>
+        <h3>email = krishankanhay@gmail.com</h3>
+    </div>
     <h1 style="color: red">MAJOR PROJECTS</h1>
-    <h2>Log Monitoring & Alerting System for Linux Servers</h2>
+    <h2>01. Log Monitoring & Alerting System for Linux Servers</h2>
+    <h3>Objective: Develop a Python or Bash script to monitor logs and send real-time alerts.</h3>
+
+    <img class="chat" src="./live-chat-app.jpg" alt="" />
+
+    <a class="anchor" href="https://live-chat-client-sec.onrender.com/">Live Chat App = Click On</a>
+    <h2>Steps:</h2>
+    <ul>
+        <li>Monitor logs in /var/log/ for:</li>
+        <ul type="circle">
+            <li>Failed SSH login attempts.</li>
+            <li>Privilege escalations.</li>
+            <li>Unauthorized access.</li>
+        </ul>
+        <li>Send alerts via email, Slack, or Telegram API.</li>
+        <li>Optionally integrate with Elasticsearch & Kibana for visualization.</li>
+    </ul>
+    <h4>Tools:</h4>
+    <ul>
+        <li>Python (os, re, smtplib)</li>
+        <li>ELK Stack (Elasticsearch, Logstash, Kibana)</li>
+        <li>Fail2Ban</li>
+    </ul>
+
+
+
+
+    <h2>02. SIEM (Security Information & Event Management) Implementation</h2>
+    <h3>Objective: Set up a SIEM system using open-source tools like Security Onion or Wazuh.</h3>
+
+    <h2>Steps:</h2>
+    <ul>
+        <li>Install Wazuh or Security Onion.</li>
+        <li>Configure log collection from:</li>
+        <ul type="circle">
+            <li>Windows Event Logs.</li>
+            <li>Linux syslogs.</li>
+            <li>Firewall logs.</li>
+        </ul>
+        <li>Set up dashboards in Kibana to monitor security events.</li>
+        <li>Create custom detection rules for brute force & anomaly detection.</li>
+    </ul>
+    <h4>Tools:</h4>
+    <ul>
+        <li>Wazuh / Security Onion</li>
+        <li>ELK Stack</li>
+        <li>OSSEC</li>
+    </ul>
+
+
+
+
+
+    <h2>03. API Security Testing Framework</h2>
+    <h3>Objective: Develop an automated framework for testing API security vulnerabilities.</h3>
+
+    <h2>Steps:</h2>
+    <ul>
+        <li>Set up an API testing environment using Flask/Django.</li>
+        <li>Implement authentication (JWT, OAuth).</li>
+        <li>Test for security flaws such as:</li>
+        <ul type="circle">
+            <li>Broken Object-Level Authorization (BOLA).</li>
+            <li>Rate-limiting bypass.</li>
+            <li>API key exposure.</li>
+        </ul>
+        <li>Automate API security scanning using Python scripts.</li>
+    </ul>
+    <h4>Tools:</h4>
+    <ul>
+        <li>Postman</li>
+        <li>OWASP ZAP</li>
+        <li>Burp Suite</li>
+        <li>Python Requests Module</li>
+    </ul>
+
+
+
+
+
+    <h2>04. Cloud Security Monitoring & Hardening</h2>
+    <h3>Objective: Secure a cloud environment (AWS/Azure) and set up monitoring.</h3>
+
+    <h2>Steps:</h2>
+    <ul>
+        <li>Deploy a basic cloud infrastructure (EC2, S3, IAM roles, Security Groups).</li>
+        <li>Set up security monitoring for:</li>
+        <ul type="circle">
+            <li>Unauthorized API requests.</li>
+            <li>Open S3 bucket misconfigurations.</li>
+            <li>Privilege escalations in IAM roles.</li>
+        </ul>
+        <li>Implement AWS GuardDuty & CloudTrail logging.</li>
+        <li>Automate alerts using Lambda functions & SNS notifications.</li>
+    </ul>
+    <h4>Tools:</h4>
+    <ul>
+        <li>AWS GuardDuty</li>
+        <li>AWS CloudTrail</li>
+        <li>AWS IAM Security Analyzer</li>
+        <li>AWS Lambda</li>
+    </ul>
+
+
+
+    <h2>05. Create a Log Monitoring and Alerting Script</h2>
+    <h3>Objective: Develop a Python or Bash script to monitor logs for suspicious activities and send alerts.</h3>
+
+    <h2>Python Tool:</h2>
+    <ol>
+        <li>Use the os and re modules to read logs from /var/log/ or any other log directory.</li>
+        <li>Search for patterns indicating:</li>
+        <ul type="circle">
+            <li>Failed login attempts.</li>
+            <li>Unauthorized access.</li>
+            <li>System resource abuse (CPU, RAM spikes).</li>
+        </ul>
+        <li>Use smtplib to send email alerts for flagged entries.</li>
+    </ol>
+    <h4>Bash Tool:</h4>
+    <ol>
+        <li>Use grep to filter specific patterns in logs (e.g., “Failed password” or “Invalid user”).</li>
+        <ul type="circle">
+            <li>Example: grep "Failed password" /var/log/auth.log.</li>
+        </ul>
+        <li>Use mail or sendmail commands to notify administrators.</li>
+    </ol>
+
+    <h4>Additional Features (Optional):</h4>
+    <ul>
+        <li>Integrate with Slack or Telegram APIs for real-time alerts.</li>
+    </ul>
+
+
+
+
+
+
 </body>
+
 </html>

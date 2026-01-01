@@ -1,23 +1,49 @@
-
-h2
-{
-    color: red;
-    font-style: italic;
-}
-
-
-body{
+body {
     background-color: burlywood;
+    padding-left: 40px;
 }
 
+.name {
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blueviolet;
+}
 
-.anchor
-{
+h2 {
     color: red;
-    text-decoration: none;
-    background-color: rgb(0, 255, 68);
     font-style: italic;
 }
+
+.chat {
+    height: 30%;
+    width: 48%;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: grab;
+}
+
+.chat:hover {
+    transform: translateY(-10px);
+}
+
+.anchor {
+    color: brown;
+    text-decoration: none;
+    background-color: rgb(244, 24, 218);
+    font-style: italic;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+ul,
+li {
+    line-height: 30px;
+}
+
+
+
+
+
 
 
 
